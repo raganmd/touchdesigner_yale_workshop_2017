@@ -5,8 +5,6 @@
 _[matthewragan.com](http://matthewragan.com)_  
 _1.5.17_
 
-[TOC]
-
 ---
 ## Summary ##
 
