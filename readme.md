@@ -51,13 +51,13 @@ Time | Topic
 [GitHub Repository | touchdesigner_yale_workshop_2017](https://github.com/raganmd/touchdesigner_yale_workshop_2017)
 
 ## Additional Support Materails ##
-[ Matthew Ragan's TouchDesigner Teaching Materials ](https://matthewragan.com/teaching-resources/touchdesigner/)
-[nvoid | Introduction to TouchDesigner ](https://www.gitbook.com/book/nvoid/introduction-to-touchdesigner/details)
-[ Ian Shelanskey's Examples ](https://ianshelanskey.com/)
-[ Dr. Indae Hwang's Examples ](http://www.indaehwang.com/category/touchdesigner/)
-[ Grady Sain's OP Tutorials ](http://www.interestingresults.com/)
-[ Matthew Ragan's Examples based on Forum Questions ](https://github.com/raganmd/td_fb_forum_examples)
-[ Offical TouchDesigner 088 Wiki ](http://www.derivative.ca/wiki088/index.php?title=Main_Page)
+[ Matthew Ragan's TouchDesigner Teaching Materials ](https://matthewragan.com/teaching-resources/touchdesigner/)  
+[nvoid | Introduction to TouchDesigner ](https://www.gitbook.com/book/nvoid/introduction-to-touchdesigner/details)  
+[ Ian Shelanskey's Examples ](https://ianshelanskey.com/)  
+[ Dr. Indae Hwang's Examples ](http://www.indaehwang.com/category/touchdesigner/)  
+[ Grady Sain's OP Tutorials ](http://www.interestingresults.com/)  
+[ Matthew Ragan's Examples based on Forum Questions ](https://github.com/raganmd/td_fb_forum_examples)  
+[ Offical TouchDesigner 088 Wiki ](http://www.derivative.ca/wiki088/index.php?title=Main_Page)  
 [ Offical Derivative Tutorials Page ](http://www.derivative.ca/wiki088/index.php?title=Category:Tutorials)
 
 _documentation written in markdown_
