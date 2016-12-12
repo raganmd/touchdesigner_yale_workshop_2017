@@ -11,6 +11,7 @@ TouchDesigner 088
 
 ## Day 1 ##
 _1.5.17_
+
 Time | Topic
 ---|---|
 9:00 - 10:00 |  |
@@ -24,6 +25,7 @@ Time | Topic
 
 ## Day 2 ##
 _1.6.17_
+
 Time | Topic
 ---|---|
 9:00 - 10:00 |  |
