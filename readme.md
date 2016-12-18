@@ -7,7 +7,7 @@ _1.5.17_
 
 ---
 
-## Summary ##
+## Summary ##  
 
 Join Matthew Ragan from [Obscura Digital](http://obscuradigital.com/) for a whirlwind tour of what goes into working as a creative coder. Over the course of two full days students will learn the fundamental principles and organizational flow of working in [Derivative's TouchDesigner](http://derivative.ca/) - for the uninitiated, TouchDesigner is a node based programming environment used in installations, live events, and museums internationally. This workshop will largely be focused on the intersection of art / design and the development of new tools for live performance. While there are a growing number of tools for media playback in live events, there are precious few for creating dynamic and generative artwork. In this workshop we will look at both how to playback traditionally made content, as well as how to build generative real-time rendered environments. More than just a flash and trash demo, this workshop aims to help familiarize students with a development environment as well as examine the challenges and opportunities when designing real-time systems.
 
@@ -21,7 +21,7 @@ Students can expect to walk away from the workshop with:
 * an overview of techniques for building user interfaces for interactive systems
 * an introduction to Python as a scripting language. 
 
-## Day 1 ##
+## Day 1 ##  
 _1.5.17_
 
 Time | Topic
@@ -38,7 +38,7 @@ Time | Topic
 ### Overview of the Day ###
 
 
-## Day 2 ##
+## Day 2 ##  
 _1.6.17_
 
 Time | Topic
