@@ -30,8 +30,8 @@ Time | Topic
 9:30 - 10:30 | Navigating the Network |
 10:30 - 12:00 | TOPs and CHOPs |
 12:00 - 12:30 | **LUNCH** |
-12:30 - 1:00 | SOPs, and Real Time Rendering |
-1:00 - 2:00| Intro to Python in Touch |
+12:30 - 1:30 | SOPs, and Real Time Rendering |
+1:30 - 2:00| Intro to Python in Touch |
 2:00 | **Offical End of Day**
 2:00 - 4:00 | Open ended work / consultation time
 
@@ -45,12 +45,78 @@ Time | Topic
 
 #### TOPS
 
+#### Sweet 16
+
+TOP | Purpose
+---|---|
+Movie File In | Read movies, still images, or a sequence of still images.
+Ramp | Create vertical, horizontal, radial, and circular ramps.
+Level | Adjust contrast, brightness, gamma, black level, color range, opacity.
+Transform| Translate, scale, rotate, multi-repeat tile, background fill.
+Over | Place and shift one image over another based on the alpha of one image.
+Text | Text generation with variety of fonts.   
+Blur | Blur.
+Composite | Combine multiple images with variety of operations like under, difference.  
+Render | Render 3D objects, lights and camera into an image.
+CHOP to | Convert CHOP channels into scanlines of an image. 
+Resolution | Change the resolution of an image and smooth-filter down.  all TOPs alter resolution
+Crop | Crop image to smaller resolution.
+Select | Selects an image from the same network or a different network.
+Reorder | Re-order the channels of an image.
+Cache | Hold a static or dynamic sequence of images and output one of them.
+Displace | Use red-blue of one image to warp another image.
 
 #### CHOPS
+
+#### Sweet 16
+
+CHOP | Purpose |
+---|---|
+Constant | Create new channels.
+LFO | Low Frequency Oscillator.
+Noise | Create semi-random patterns.    
+Select | Grab a channel from any other CHOP.
+Merge | Merge channels from two or more CHOPs.
+Math | Add, multiply or scale channels.
+Lag | Smooth and delay a channel.
+Speed | Use speed to calculate distance.
+Lookup | Use one channel to get values from another CHOP.
+Trail | Watch a time-history of CHOP channels.
+SOP to | Record a time-history of channels.  DAT to, TOP to
+Limit | Restrict channels to a range or certain step values.
+Audio Device In | Get audio from input device.
+OSC In | Open Sound Control, MIDI.
+Panel | Get state, u, v etc values from any panel gadget. 
+Timer | Run timers, loops, delays and trigger events.
+
+##### References
+
+##### Exports
 
 
 #### SOPS
 
+#### Sweet 16
+
+
+SOP | Purpose
+---|---
+Circle | Circle, sphere, torus primitives.
+Grid | Grid, box, rectangle.
+Merge | Merge and delete.
+Copy | Copy or replicate.
+Switch | Switch or blend multi-inputs.
+Texture | Apply texture coordinated to points or vertices.
+Noise | Apply noise, twist and deform.
+Transform | Transform point positions.
+DAT to | DAT table to SOP points.
+CHOP to | CHOP channel samples to SOP points.
+Trace | Trace a TOP image to polygons.
+Clip | Clip and carve.
+Facet | Facet, subdivide, convert.
+Particle | Particles.   
+Sweep | Sweep, skin, rails.
+Sort | Sort and reorder.
 
 #### Realtime Rendering
 
