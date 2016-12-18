@@ -37,6 +37,28 @@ Time | Topic
 
 ### Overview of the Day ###
 
+#### Introductions
+
+
+#### Navigating the Network
+
+
+#### TOPS
+
+
+#### CHOPS
+
+
+#### SOPS
+
+
+#### Realtime Rendering
+
+
+#### Introduction to Python in TouchDesigner
+
+
+---
 
 ## Day 2  
 _1.6.17_
@@ -53,6 +75,20 @@ Time | Topic
 2:00 - 4:00 | Open ended work / consultation time
 
 ### Overview of the Day ###
+
+#### Building your First Playback System
+
+
+#### Building a VJ System
+
+
+#### Tracking Performers with a Kinect
+
+
+#### Advanced Rendering
+
+
+#### Best Practices and Optimization
 
 
 ## Online Materials ##
