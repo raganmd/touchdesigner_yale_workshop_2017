@@ -30,10 +30,11 @@ Time | Topic
 9:30 - 10:30 | Navigating the Network |
 10:30 - 12:00 | TOPs and CHOPs |
 12:00 - 12:30 | **LUNCH** |
-12:30 - 1:30 | SOPs, and Real Time Rendering |
-1:30 - 2:00| Intro to Python in Touch |
+12:30 - 1:00 | Intro to Python in Touch |
+1:00 - 2:00 | Building your First Playback System |
 2:00 | **Offical End of Day**
 2:00 - 4:00 | Open ended work / consultation time
+
 
 ### Overview of the Day ###
 
@@ -131,12 +132,12 @@ _1.6.17_
 
 Time | Topic
 ---|---|
-9:00 - 10:00 | Building your First Playback System |
-10:00 - 11:00 | Building a VJ System |
-11:00 - 12:00 | Tracking Performers with a Kinect |
+9:00 - 10:00 | SOPs, and Real Time Rendering |
+10:00 - 11:00 | Advanced Rendering Techniques - Instancing |
+11:00 - 12:00 | Building a VJ System |
 12:00 - 12:30 | **LUNCH** |
-12:30 - 1:00 | Advanced Rendering Techniques - Instancing |
-1:00 - 2:00| Best Practices and Optimization |
+12:30 - 1:30 | Tracking Performers with a Kinect |
+1:30 - 2:00| Q&A and Offical Wrap |
 2:00 | **Offical End of Day**
 2:00 - 4:00 | Open ended work / consultation time
 
