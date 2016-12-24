@@ -39,12 +39,18 @@ Time | Topic
 ### Overview of the Day ###
 
 #### Introductions
-
+I have a plan for how we're going to use our time over the next two days, but sometimes plans need to change. We're going to start by taking a few minutes to get to know who is in the room - this way I can get a sense of if we're on the right track for the next two days or if I need to help us shift course.
 
 #### Navigating the Network
+Welcome to the TouchDesigner network. The Network is the name for the open space where we layout our nodes, and create chains of operators. We can zoom, pan, and navigate the network like a hierarchy. We can also expose lots of different viewports from here. We aren't going to spend too much time talking about how to navigate the network abstractly - since it's easiest to learn by actually working on a project - but it is handy to know a few things to help us get started.
 
+What is an operator?! If you're familiar with Object Oriented Programming, we can almost think of our operators as an instance of an object. If you're not familiar with OOP (I wasn't when I started) that's okay. We can think of an operator as a building block for our networks. How we arrange our building blocks changes what our final results are, and how we structure our projects can make it harder or easier at the end of the day to know what's going on. In general, we are going to focus on building clean, modular, and reusable networks. It's often tempting to feel like you need to make something unique for every show or installation, but in fact we end up being much happier programmers if we're able to re-use pieces of our code. Over the next two day we're going to step into a strange head space. We're no longer just designers, we now have to think of ourselves as programmers and engineers. It's not enough to have a creative vision, we know have to consider what implementation means in our design. 
+
+"But Matt, forcing me to think about the engineering is going to hamper my creative process! I just want to create without boundaries." Good for you. These days I don't usually let myself be limited by what's possible technically; however, when we're starting to think about interactivity and developing new tools we need to start from somewhere - and our somewhere relies on making sure we have a common understanding of the computational processes and principles that will define what we can ask a computer to do. In designing a production we often wrestle with various constraints - the play is a constraint, the space is a constraint, the time, the set, and and and. Design is inherently a process of wrestling with constraint, so let's think of our knowledge of this field as just another constraint for the time being. Rather than thinking of how we're limited by the realities of current technology, we might instead think about how knowing the rules of a given system allow us to find ways of working around them or flat out exploiting them. 
 
 #### TOPS
+
+TOPs - short for Texture Operators - are the pixel engine of our environment. What does that mean, "Texture?" Texture operators owe their namespace to the fact that to your computer a set of pixels, especially in conjunction with a graphics card, is called a texture. Texture operations are how we manipulate pixels, and especially how we think about manipulating pixels with GLSL. Nearly all of our TOPs are, under the hood, GLSL code wrapped up to look like an operator. GL is especially fast as it's usually run on your graphics card. These operations happen in parallel and are usually very fast. So fast, in fact, that we usually don't have to think about the computational cost of TOPs. There are many exceptions to this rule, but as we get started these operators are the ones that need the least attention from us when it comes to thinking of optimization.
 
 #### Sweet 16
 
@@ -92,13 +98,39 @@ Timer | Run timers, loops, delays and trigger events.
 
 ##### References
 
+
 ##### Exports
 
 
+#### Introduction to Python in TouchDesigner
+
+
+#### Building your First Playback System
+
+
+
+---
+
+## Day 2  
+_1.6.17_
+
+Time | Topic
+---|---|
+9:00 - 10:00 | SOPs, and Real Time Rendering |
+10:00 - 11:00 | Advanced Rendering Techniques - Instancing |
+11:00 - 12:00 | Building a VJ System |
+12:00 - 12:30 | **LUNCH** |
+12:30 - 1:30 | Tracking Performers with a Kinect |
+1:30 - 2:00| Q&A and Offical Wrap | Other Resources
+2:00 | **Offical End of Day**
+2:00 - 4:00 | Open ended work / consultation time
+
+### Overview of the Day ###
+
 #### SOPS
 
-#### Sweet 16
 
+#### Sweet 16
 
 SOP | Purpose
 ---|---
@@ -120,30 +152,6 @@ Sweep | Sweep, skin, rails.
 Sort | Sort and reorder.
 
 #### Realtime Rendering
-
-
-#### Introduction to Python in TouchDesigner
-
-
----
-
-## Day 2  
-_1.6.17_
-
-Time | Topic
----|---|
-9:00 - 10:00 | SOPs, and Real Time Rendering |
-10:00 - 11:00 | Advanced Rendering Techniques - Instancing |
-11:00 - 12:00 | Building a VJ System |
-12:00 - 12:30 | **LUNCH** |
-12:30 - 1:30 | Tracking Performers with a Kinect |
-1:30 - 2:00| Q&A and Offical Wrap |
-2:00 | **Offical End of Day**
-2:00 - 4:00 | Open ended work / consultation time
-
-### Overview of the Day ###
-
-#### Building your First Playback System
 
 
 #### Building a VJ System
