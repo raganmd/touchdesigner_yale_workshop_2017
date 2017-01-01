@@ -50,9 +50,11 @@ What is an operator?! If you're familiar with Object Oriented Programming, we ca
 
 #### TOPS
 
-TOPs - short for Texture Operators - are the pixel engine of our environment. What does that mean, "Texture?" Texture operators owe their namespace to the fact that to your computer a set of pixels, especially in conjunction with a graphics card, is called a texture. Texture operations are how we manipulate pixels, and especially how we think about manipulating pixels with GLSL. Nearly all of our TOPs are, under the hood, GLSL code wrapped up to look like an operator. GL is especially fast as it's usually run on your graphics card. These operations happen in parallel and are usually very fast. So fast, in fact, that we usually don't have to think about the computational cost of TOPs. There are many exceptions to this rule, but as we get started these operators are the ones that need the least attention from us when it comes to thinking of optimization.
+TOPs - short for Texture Operators - are the pixel engine of our environment. What does that mean, "Texture?" Texture operators owe their namespace to the fact that to your computer a set of pixels, especially in conjunction with a graphics card, is called a texture. Texture operations are how we manipulate pixels, and especially how we think about manipulating pixels with GLSL. Nearly all of our TOPs are, under the hood, GLSL wrapped up to look like an operator. GL is especially fast as it's usually run on your graphics card. These operations happen in parallel and are therefore fast. So fast, in fact, that we usually don't have to think about the computational cost of TOPs. There are many exceptions to this rule, but as we get started these operators are the ones that need the least attention from us when it comes to thinking of optimization.
 
-#### Sweet 16
+We're going to take some time to talk about TOPs and play with creating networks of them. Derivative usually encourages new programmers to look over the top 16 ops that are essential ingredients to working with these operators. We won't cover all of them, but they're worth looking over when you have time.
+
+**Sweet 16**
 
 TOP | Purpose
 ---|---|
@@ -75,7 +77,11 @@ Displace | Use red-blue of one image to warp another image.
 
 #### CHOPS
 
-#### Sweet 16
+CHOPs - short for Channel Operators - are the control engine of this environment. There's lots to cover here, but to help us get started it's important to think about channels and samples as being distinct from one another. This can be a bit of a tricky concept, but it's well worth taking some time to think through how these differ. Let's, for a moment, think about channels and samples as though they were beads on a string. Each string is a different channel. A string can hold lots of beads. All of the beads on the same string are connected to one another positionally. That is to say that on a single string we can differentiate the third bead from the fourth. Using this metaphor we can think of channels as being the string, and beads as being samples. Try on that idea for a little bit, and remember to come back to it as we talk more and more about channels and samples. 
+
+For now we'll start by looking at how we can connect CHOPs in series to build control and animation systems. Derivative usually encourages new programmers to look over the top 16 ops that are essential ingredients to working with these operators in general. We won't cover all of them, but they're worth looking over when you have time.
+
+**Sweet 16**
 
 CHOP | Purpose |
 ---|---|
@@ -107,6 +113,11 @@ Timer | Run timers, loops, delays and trigger events.
 
 #### Building your First Playback System
 
+While all of the concepts above a great in principle, they're difficult to understand outside of the context of what they do, and they they work together. We'll use the rest of our time today to build out a simple playback system for pre-made video. Playing back files is one of the essential ingredients in working with any programming language in a performance setting, so we'll take the concepts we learned today and apply them in practice. 
+
+#### End of Day 1
+
+I know you're all hungry for more programming, and so am I. I'm available for the next 2 hours to answer questions, look over work, help you do some programming, or talk through how to actualize a concept you've been thinking about. 
 
 
 ---
@@ -165,6 +176,8 @@ Sort | Sort and reorder.
 
 #### Best Practices and Optimization
 
+
+#### End of Day 2
 
 ## Online Materials ##
 [GitHub Repository | touchdesigner_yale_workshop_2017](https://github.com/raganmd/touchdesigner_yale_workshop_2017)
