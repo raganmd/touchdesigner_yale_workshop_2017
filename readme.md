@@ -253,6 +253,16 @@ for item in range( 10 ):
 
 Nearly every parameter in TouchDesigner can be scripted. That's handy because it means we can use python to make lots of changes based on user inputs or logic tests. This creates a whole new area of possibilities for us, one that honestly took me a little too long to really understand. We're going to start by looking at how we can change the value of a parameter on a constant CHOP.
  
+Looking at our constant CHOP, if we look at parameters we can see on the left hand side that it says value0 on the left hand side of the parameter window. This also happens to be parameter name we can use in python to access this parameter.
+
+Let's change this value to a different number to see this in action.
+
+```python
+op( 'constant1' ).par.value0 = 10
+```
+
+With the script above we're able to change a value in one of our operators. We'll take a closer look at this technique, and how we can better take advantage of it as we build out a simple playback system.
+
 #### Building your First Playback System
 
 While all of the concepts above a great in principle, they're difficult to understand outside of the context of what they do, and they they work together. We'll use the rest of our time today to build out a simple playback system for pre-made video. Playing back files is one of the essential ingredients in working with any programming language in a performance setting, so we'll take the concepts we learned today and apply them in practice. 
