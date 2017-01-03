@@ -102,13 +102,112 @@ OSC In | Open Sound Control, MIDI.
 Panel | Get state, u, v etc values from any panel gadget. 
 Timer | Run timers, loops, delays and trigger events.
 
-##### References
+##### References and Exports
 
+There are two major ways to connect operators of dissimilar families together in TouchDesigner. We can use both references (written in as Python expressions) or exports from tables or CHOPs. If you're scratching your head that's okay. We've already seen that operators of similar families can be connected with wires, but operators of dissimilar families need to be connected with exports or references. This means we can drive attributes of a given object with another object. 
 
-##### Exports
+That's all well and good Matt, but why are there two different ways? Well, that's a good question. I wish there was a simple straightforward answer, but like many things in the world, it's a little murky. Python is excellent for huge number of tasks. It's also far more flexible (in my opinion at least), and generally simpler to set up. While that may be true, it's also less efficient than exports. So... what is a person to do?! The honest answer is learn both. I often start with Python references and then move to exports during my final optimization steps on a project. Though much of this often depends on the project, the installation, and the complexity of the job. We're going to learn a bit of both.
 
+[Understanding references part 1](https://matthewragan.com/2014/06/01/understanding-referencing-touchdesigner/)
+[Understanding references part 2](https://matthewragan.com/2014/06/27/understanding-referencing-part-ii-touchdesigner/)
+[Writing references with Python](https://matthewragan.com/2015/10/19/python-in-touchdesigner-writing-python-references-touchdesigner/)
 
 #### Introduction to Python in TouchDesigner
+
+We're not going to do a full Python course - we just don't have the time - but we are going to cover some essential principles that we often need when doing any Python scripting in touch. Before we get there, it's worth thinking about why we need to learn a scripting language. 
+
+**Why Python Anyways?!**
+
+Scripting lets us extend what we can do in Touch beyond using just the operators in our networks. Why? Well, that's a reasonable question to ask, and when the rubber meets the road we often need do a few things in a script based approach to make sure everything goes the way we want. Using Python we have access to a whole different set of tools to determine when operations occur, change parameters on operators, and any number of actions. A little bit of Python can go a long way, and while I often need to write out more complex classes for large scale projects, we can start by getting our feet wet with a few essential ingredients.
+
+**Printing**
+
+Printing is our way to see what's happening in our code. Printing is the best way we have to debug what's happening in our Python, and it's part of the reason we start here. In TouchDesigner when we print out something it shows up in the text port. We're going to take a hot second to locate the text port, and then see how our messages end up there when we print them.
+
+**Variables and Logic**
+
+Take a moment and remember back to your Algebra 1 class. Let's take a look at an equation:
+```
+f(x) = 2 * x
+```
+In algebra x is our variable. It stands in for any possible number, right? So if x = 10, then the result of our function is 20. We can use this same idea as the starting point for understanding variable in a programming language. Variables allow us to write abstract code, but unlike Algebra, our variables are far more flexible (more on that later). For now we can use this idea to help us do some logic. 
+
+Let's write a simple logical test to see how this might work. We want to know which of two numbers is larger - number 1 or number 2. We're going to practice this with variables, so let's start by writing out our two variables:
+
+```python
+var1 = 3
+var2 = 10
+```
+
+Next we'll use a simple logical test to print out which number is larger:
+
+```python
+
+if var1 > var2:
+    print( 'var1 wins' )
+
+else:
+    print( 'var2 wins' )
+```
+
+This is pretty good, but it leaves out an essential possibility... what if both numbers are the same?! Let's add one more logical test to account for that possibility:
+
+```python
+var1 = 3
+var2 = 3
+
+if var1 > var2:
+    print( 'var1 wins' )
+
+elif var1 == var2:
+    print( 'We got a tie kids!' )
+
+else:
+    print( 'var2 wins' )
+```
+
+**Loops**
+
+Loops let us simplify code that might otherwise be tedious to write. Okay, using what we've learned so far, let's print out all the numbers between 0 and 10 - but not including 10. Better yet, let's include something like "this is number " before the number. If we do that the long hand way it might look like;
+
+```python
+print( "This is number 0" )
+print( "This is number 1" )
+print( "This is number 2" )
+print( "This is number 3" )
+print( "This is number 4" )
+print( "This is number 5" )
+print( "This is number 6" )
+print( "This is number 7" )
+print( "This is number 8" )
+print( "This is number 9" )
+```
+
+Okay, that's not so bad, but what if we wanted to do that up to 100, or 1000, or 10,000. You get the idea, doing this the long way doesn't scale well. So, what's the better way? The better way is to write a loop that will execute the same code for all of the values in a given set. Let's look at what that might be in Python:
+
+```python
+for item in range( 0,10 ):
+    print( item )
+```
+
+The code above just prints the item, but we can modify it to be just like our first example:
+
+```python
+for item in range( 0,10 ):
+    print( "This is number ", item )
+```
+
+So what's happening here? Our simple for loop uses the word "item" to stand in for a variable that increments every-time we go through the loop. Our range determines our starting and ending points. We can write this in a way that's a little cleaner by using a variable instead of those bounding values:
+
+```python
+num_loops = 10
+
+for item in range( num_loops ):
+    print( item )
+```
+
+**Methods/Functions**
+
 
 
 #### Building your First Playback System
