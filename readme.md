@@ -108,9 +108,9 @@ There are two major ways to connect operators of dissimilar families together in
 
 That's all well and good Matt, but why are there two different ways? Well, that's a good question. I wish there was a simple straightforward answer, but like many things in the world, it's a little murky. Python is excellent for huge number of tasks. It's also far more flexible (in my opinion at least), and generally simpler to set up. While that may be true, it's also less efficient than exports. So... what is a person to do?! The honest answer is learn both. I often start with Python references and then move to exports during my final optimization steps on a project. Though much of this often depends on the project, the installation, and the complexity of the job. We're going to learn a bit of both.
 
-[Understanding references part 1](https://matthewragan.com/2014/06/01/understanding-referencing-touchdesigner/)
-[Understanding references part 2](https://matthewragan.com/2014/06/27/understanding-referencing-part-ii-touchdesigner/)
-[Writing references with Python](https://matthewragan.com/2015/10/19/python-in-touchdesigner-writing-python-references-touchdesigner/)
+[Understanding references part 1](https://matthewragan.com/2014/06/01/understanding-referencing-touchdesigner/)  
+[Understanding references part 2](https://matthewragan.com/2014/06/27/understanding-referencing-part-ii-touchdesigner/)  
+[Writing references with Python](https://matthewragan.com/2015/10/19/python-in-touchdesigner-writing-python-references-touchdesigner/)  
 
 #### Introduction to Python in TouchDesigner
 
@@ -208,8 +208,51 @@ for item in range( num_loops ):
 
 **Methods/Functions**
 
+Nice work! Now lets' look a little at functions. Functions let us write a little piece of reusable code that we can come back to. These can be very handy in TouchDesigner, especially if there's something that we know we'll need to do from time to time. Just like earlier when we were talking about functions in relationship to algebra to understand variables - now let's go a step farther and see how we can write that same algebraic function in Python.
 
+Algebra
+```
+f(x) = 2 * x
+```
 
+Python
+```python
+def my_function( value1 ):
+    result = 2 * value1
+    return result
+```
+
+That's a little different from the Algebra, so let's pull apart what's happening. First we specify that we're defining a function called my_function - that's what's happening when we use "def" in front of our function name. Next we can specify that this function takes an argument - this is what's in our parenthesis. A colon specifies what's inside of the function. Here I'm create a new variable, "result", that's our input value * 2. Finally we return our new variable with a return statement. If we didn't use a return statement our value would still be calculated, but it wouldn't be accessible to use outside of the function. Let's use this same idea in conjunction with what we did earlier. 
+
+Let's start by turning our logic test into a function. After we do that, let's run the function as a part of a for loop.
+
+```python
+
+# here we're going to start by writing out our new function
+def my_method( my_var1, my_var2 ):
+    
+    if my_var1 > my_var2:
+        print( 'var1 wins' )
+
+    elif my_var1 == my_var2:
+        print( 'We got a tie kids!' )
+
+    else:
+        print( 'var2 wins' )
+
+# next we define a variable for our loop - how many loops that is
+num_loops = 10
+
+# finally we run the loop
+for item in range( 10 ):
+    my_method( item, 5 )
+
+```
+
+**Targeting Operators**
+
+Nearly every parameter in TouchDesigner can be scripted. That's handy because it means we can use python to make lots of changes based on user inputs or logic tests. This creates a whole new area of possibilities for us, one that honestly took me a little too long to really understand. We're going to start by looking at how we can change the value of a parameter on a constant CHOP.
+ 
 #### Building your First Playback System
 
 While all of the concepts above a great in principle, they're difficult to understand outside of the context of what they do, and they they work together. We'll use the rest of our time today to build out a simple playback system for pre-made video. Playing back files is one of the essential ingredients in working with any programming language in a performance setting, so we'll take the concepts we learned today and apply them in practice. 
